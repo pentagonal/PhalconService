@@ -1,0 +1,12 @@
+<?php
+/**
+ * @var \Phalcon\Mvc\View\Engine\Php $this
+ */
+?>
+    <?= $this->tag->tagHtmlClose('div');?>
+
+    <!-- .wrapper -->
+<?= rtrim(implode("\n    ", (array) $this->view->getVar('block_footer')), ' ')?: '';?>
+
+<?= $this->tag->tagHtmlClose('body', true);?>
+<?= $this->tag->tagHtmlClose('html');?>

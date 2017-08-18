@@ -1,0 +1,15 @@
+<?php
+/**
+ * @var \Phalcon\Mvc\View\Engine\Php $this
+ */
+?>
+<!DOCTYPE html>
+<html<?= (string) $this->view->getVar('html_attributes');?>>
+<head>
+    <?= trim($this->tag->getTitle()) ."\n";?>
+    <?= (string) $this->view->getVar('block_meta');?>
+    <?= (string) $this->view->getVar('block_header');?>
+
+</head>
+<?= $this->tag->tagHtml('body', (array) $this->view->getVar('body_attributes'), false, true, true);?>
+    <div class="wrapper" id="page">

@@ -1,0 +1,8 @@
+{
+    "name": "pentagonal/service",
+    "type": "project",
+    "require": {
+        "php": ">=7.0",
+        "filp/whoops": "^2.1"
+    }
+}
